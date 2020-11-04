@@ -14,7 +14,7 @@ export default function ClearIncompletedListAlert() {
 
     useEffect(() => {
         if (isButtonDeleteUncompletedClicked === true && show === false) return setShow(true);
-    }, [isButtonDeleteUncompletedClicked]);
+    }, [isButtonDeleteUncompletedClicked, show]);
 
     return (
         <>

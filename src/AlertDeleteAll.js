@@ -14,7 +14,7 @@ export default function AlertDeleteAll() {
 
     useEffect(() => {
         if (isButtonDeleteAllClicked === true && show === false) return setShow(true);
-    }, [isButtonDeleteAllClicked]);
+    }, [isButtonDeleteAllClicked, show]);
 
     return (
         <>

@@ -14,7 +14,7 @@ export default function TodoAlert() {
 
     useEffect(() => {
         if (todoClicked === true && show === false) return setShow(true);
-    }, [todoClicked]);
+    }, [todoClicked, show]);
 
     return (
         <>
