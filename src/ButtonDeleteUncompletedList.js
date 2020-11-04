@@ -3,7 +3,7 @@ import { TodoContext } from './ContextTodo';
 import ButtonBadge from './ButtonBadge';
 import Button from 'react-bootstrap/Button';
 
-export default function ClearTodosButton() {
+export default function ButtonDeleteUncompletedList() {
 
     const { deleteUncompletedTodos, uncompletedTodos, setIsButtonDeleteUncompletedClicked } = useContext(TodoContext);
 

@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { TodoContext } from './ContextTodo';
 import Alert from 'react-bootstrap/Alert';
 
-export default function TodoAlert() {
+export default function AlertTodoCompleted() {
     const [show, setShow] = useState(false);
 
     const { todoClicked, setTodoClicked } = useContext(TodoContext);

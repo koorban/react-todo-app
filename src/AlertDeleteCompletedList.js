@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { TodoContext } from './ContextTodo';
 import Alert from 'react-bootstrap/Alert';
 
-export default function ClearCompletedListAlert() {
+export default function AlertDeleteCompletedList() {
     const [show, setShow] = useState(false);
 
     const { isButtonDeleteCompletedClicked , setIsButtonDeleteCompletedClicked } = useContext(TodoContext);

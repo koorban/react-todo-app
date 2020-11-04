@@ -4,7 +4,7 @@ import ListGroupItem from './ListGroupItem';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-export default function TodoList() {
+export default function UncompletedList() {
     const { uncompletedTodos } = useContext(TodoContext);
 
     return (
