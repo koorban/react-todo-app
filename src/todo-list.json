@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "item": "Sample Todo Data",
+        "isDone": false
+    },
+    {
+        "id": "2",
+        "item": "Sample Todo Data 2",
+        "isDone": true
+    }
+]
