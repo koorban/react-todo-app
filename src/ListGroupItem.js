@@ -7,7 +7,7 @@ export default function ListGroupItem({ id, item, isDone }) {
 
     const variant = isDone ? "success" : "danger";
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         updateIsDone(id);
         setIsTodoClicked(true);
     };
@@ -21,7 +21,7 @@ export default function ListGroupItem({ id, item, isDone }) {
             }
             
             { variant === 'danger' &&
-                <ListGroup.Item action variant="danger" id={id} onClick={(e) => handleClick(e)}>
+                <ListGroup.Item action variant="danger" id={id} onClick={() => handleClick()}>
                     {item}
                 </ListGroup.Item>
             }
