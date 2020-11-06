@@ -26,6 +26,7 @@ export default function ButtonContainer() {
                     list={todos}
                     removeList={deleteAllTodos}
                     setButtonBoolean={setIsButtonDeleteAllClicked}
+                    alertMessage='The Todo list is empty!'
                     buttonName='Delete All'
                 />
             </Col>
@@ -34,6 +35,7 @@ export default function ButtonContainer() {
                     list={completedTodos}
                     removeList={deleteCompletedTodos}
                     setButtonBoolean={setIsButtonDeleteCompletedClicked}
+                    alertMessage='The Completed list is empty!'
                     buttonName='Delete All Completed'
                 />
             </Col>
@@ -42,6 +44,7 @@ export default function ButtonContainer() {
                     list={uncompletedTodos}
                     removeList={deleteUncompletedTodos}
                     setButtonBoolean={setIsButtonDeleteUncompletedClicked}
+                    alertMessage='The Uncompleted list is empty!'
                     buttonName='Delete All Uncompleted'
                 />
             </Col>
