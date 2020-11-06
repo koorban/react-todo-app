@@ -1,15 +1,10 @@
 import React from 'react';
 import Header from './Header';
 import TodoForm from './TodoForm';
-import UncompletedList from './UncompletedList';
-import CompletedList from './CompletedList';
-import ButtonDeleteAll from './ButtonDeleteAll';
-import ButtonDeleteUncompletedList from './ButtonDeleteUncompletedList';
-import ButtonDeleteCompletedList from './ButtonDeleteCompletedList';
-import AlertTodoCompleted from './AlertTodoCompleted';
-import AlertDeleteAll from './AlertDeleteAll';
-import AlertDeleteUncompletedList from './AlertDeleteUncompletedList';
-import AlertDeleteCompletedList from './AlertDeleteCompletedList';
+import ListContainer from './ListContainer';
+import ButtonRemoveContainer from './ButtonRemoveContainer';
+import AlertContainer from './AlertContainer';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,31 +19,15 @@ function App() {
         </Col>
       </Row>
       <Row className="mb-5">
-        <Col>
-          <ButtonDeleteAll />
-        </Col>
-        <Col>
-          <ButtonDeleteUncompletedList />
-        </Col>
-        <Col>
-          <ButtonDeleteCompletedList />
-        </Col>
+        <ButtonRemoveContainer />
       </Row>
       <Row>
         <Col>
-          <AlertTodoCompleted />
-          <AlertDeleteAll />
-          <AlertDeleteUncompletedList />
-          <AlertDeleteCompletedList />
+          <AlertContainer />
         </Col>
       </Row>
       <Row>
-        <Col>
-          <UncompletedList />
-        </Col>
-        <Col>
-          <CompletedList />
-        </Col>
+        <ListContainer />
       </Row>
     </Container>
   );

@@ -1,20 +1,18 @@
-import React, { useContext } from 'react';
-import { TodoContext } from './ContextTodo';
+import React from 'react';
 import ListGroupItem from './ListGroupItem';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-export default function CompletedList() {
-    const { completedTodos } = useContext(TodoContext);
-  
+export default function List({ contextInfo, title }) {
+    
     return (
         <Card>
             <Card.Title className="text-center my-3">
-                Complete
+                {title}
             </Card.Title>
             <ListGroup variant="flush">
-                {completedTodos.map((todo) => {
-                    return <ListGroupItem {...todo} />
+                {contextInfo.map((todo) => {
+                    return <ListGroupItem key={todo.id} {...todo} />
                 })}
             </ListGroup>
         </Card>
