@@ -7,10 +7,15 @@ import Header from './Header';
 import TodoForm from './TodoForm';
 import ListCompletedContainer from './ListCompletedContainer';
 import ListUncompletedContainer from './ListUncompletedContainer';
+
 import DeleteAllContainer from './DeleteAllContainer';
 import DeleteUncompletedContainer from './DeleteUncompletedContainer';
 import DeleteCompletedContainer from './DeleteCompletedContainer';
-import AlertContainer from './AlertContainer';
+
+import AlertTodoContainer from './AlertTodoContainer';
+import AlertDeleteCompletedContainer from './AlertDeleteCompletedContainer';
+import AlertDeleteAllContainer from './AlertDeleteAllContainer';
+import AlertDeleteUncompletedContainer from './AlertDeleteUncompletedContainer';
 
 function App() {
     return ( 
@@ -34,7 +39,10 @@ function App() {
             </Row> 
             <Row>
                 <Col>
-                    <AlertContainer />
+                    <AlertTodoContainer />
+                    <AlertDeleteCompletedContainer />
+                    <AlertDeleteAllContainer />
+                    <AlertDeleteUncompletedContainer />
                 </Col> 
             </Row> 
             <Row> 
