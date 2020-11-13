@@ -1,14 +1,16 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import Header from './Header';
 import TodoForm from './TodoForm';
 import ListCompletedContainer from './ListCompletedContainer';
 import ListUncompletedContainer from './ListUncompletedContainer';
-import ButtonRemoveContainer from './ButtonRemoveContainer';
+import DeleteAllContainer from './DeleteAllContainer';
+import DeleteUncompletedContainer from './DeleteUncompletedContainer';
+import DeleteCompletedContainer from './DeleteCompletedContainer';
 import AlertContainer from './AlertContainer';
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function App() {
     return ( 
@@ -20,7 +22,15 @@ function App() {
                 </Col> 
             </Row> 
             <Row className = "mb-5">
-                <ButtonRemoveContainer />
+                <Col>
+                    <DeleteAllContainer />
+                </Col>
+                <Col>
+                    <DeleteUncompletedContainer />
+                </Col>
+                <Col>
+                    <DeleteCompletedContainer />
+                </Col>
             </Row> 
             <Row>
                 <Col>
